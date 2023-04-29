@@ -6,10 +6,11 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    /*outline: 1px solid;*/
+    /*outline: dashed red 1px;*/
 }
 :root{
     --bg-color: #f7f7f7;
+    --bg-second-color: #c9ccd1;
 	--text-color: #303030;
 	--main-color: #0000ff;
     --second-color: #18a018;
@@ -21,8 +22,10 @@ body{
     background: url(../img/wallpaperflare.com_wallpaper.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 70%;
 }
+
+/*Log In Page*/
 #index{
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +47,7 @@ body{
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 10%);
-    border-radius: 20px;
+    border-radius: 15px;
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
@@ -110,7 +113,7 @@ input:focus ~ label, input:valid ~ label{
 .login-btn{
     width: 100%;
     height: 40px;
-    border-radius: 40px;
+    border-radius: 30px;
     background: var(--bg-color);
     border: none;
     outline: none;
@@ -124,10 +127,149 @@ input:focus ~ label, input:valid ~ label{
     text-align: center;
     margin: 25px 0 10px;
 }
-.register p a{
+.register p button{
     color: var(--bg-color);
+    font-size: 1em;
     font-weight: 600;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
-.register p a:hover{
+.register p button:hover{
     text-decoration: underline;
+}
+
+/*Registration Form*/
+.modal-reg{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /*padding: 1%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.reg-form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 700px;
+    height: 99%;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 10%);
+}
+.container .close-icon{
+    position: relative;
+    color: var(--bg-second-color);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+}
+.container .close-icon:hover, .container .close-icon:focus{
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    background: var(--second-color);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input, select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bg-second-color);
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+.user-details .input-box select{
+    background: url(../img/arrow-down.png) no-repeat 95%;
+    background-color: white;
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+    padding : 4px 20px
+}
+.user-details .input-box input:focus, 
+.user-details .input-box select:focus{
+    border-color: var(--second-color);
+}
+form .reg-btn{
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+}
+form .reg-btn input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: var(--bg-color);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background: var(--second-color);
+    /*background: linear-gradient(75deg, #0000ff, #18a018);*/
+}
+form .reg-btn input:hover{
+    background: linear-gradient(0deg, #18a04c, #18a018);
+    cursor: pointer;
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        /* width: 0; */
+        width: 1;
+    }
 }
