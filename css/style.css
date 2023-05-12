@@ -61,7 +61,7 @@
 
 body{
     background: var(--color-background);
-
+    height: auto;
     /* 
     width: 100%;
     height: 100vh;
@@ -445,6 +445,16 @@ nav .sidebar a.active{
     color: var(--color-primary);
     margin-left: 0;
 }
+/* nav .sidebar a.inactive{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+} */
 nav .sidebar a.active:before{
     content: '';
     width: 6px;
@@ -729,6 +739,186 @@ main .recent-logs a{
 
 
 
+/* -- COMPANY FORM SECTION -- */
+.comp-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.com-container{
+    max-width: 700px;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 25px 35px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 10%);
+}
+.comp-container form .comp-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 0 12px 0px;
+
+    border-radius: 15px;
+    padding: 5% 4% 2% 4%;
+    border: 2px solid var(--color-info-dark);
+}
+.comp-container form .box-info{
+    display: inline-block;
+    background: var(--color-background);
+    margin: 25px 0 0 30px;
+    padding: 0 10px 0 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transform: translateY(80%);
+}
+form .comp-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+form .comp-details .input-box .details{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.comp-details .input-box input, select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bg-second-color);
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+
+.comp-container form .comp-details-textarea{
+/*  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    margin: 5px 0 12px 0px;
+
+    border-radius: 15px;
+    padding: 3%;
+    border: 2px solid var(--color-info-dark);
+}
+form .comp-details-textarea .input-box .details{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.comp-details-textarea .input-box textarea{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bg-second-color);
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+
+.comp-details .input-box select{
+    background: url(../img/arrow-down.png) no-repeat 95%;
+    background-color: white;
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+    padding : 4px 20px
+}
+.comp-details .input-box [type="date"]{
+    background-color: white;
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+    padding : 4px 20px
+}
+
+/* -- CSS for input[date] FROM - TO -- */ 
+.input-box .fromto-input{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+}
+.input-box .fromto-input [type="date"]{
+    padding: 2%;
+}
+.fromto-input .details-from{
+    margin-right: 1%;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.fromto-input .details-to{
+    margin-left: 1%; 
+    margin-right: 1%;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.comp-details .input-box input:focus, 
+.comp-details .input-box select:focus,
+.comp-details .input-box textarea:focus{
+    border-color: var(--second-color);
+}
+form .comp-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+form .comp-submit-btn{
+    height: 45px;
+    width: 100%;
+    margin-top: 0;
+    padding: 0 2% 0 2%;
+}
+form .comp-submit-btn input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: var(--bg-color);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    background: var(--second-color);
+    background: #2da742;
+}
+form .comp-submit-btn input:hover{
+    background: linear-gradient(180deg,#2da742, #03941b);
+    cursor: pointer;
+}
+
+form .comp-cancel-btn{
+    height: 45px;
+    width: 100%;
+    margin-top: 0;
+    padding: 0 2% 0 2%;
+}
+form .comp-cancel-btn input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: var(--bg-color);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    background: var(--second-color);
+    background: #ff4252;
+}
+form .comp-cancel-btn input:hover{
+    background: linear-gradient(180deg, #ff4252, #fc2436);
+    cursor: pointer;
+}
 
 
 
@@ -757,7 +947,8 @@ main .recent-logs a{
     .main-container{
         width: 94%;
         grid-template-columns: 7rem auto 20rem;
-        height: 218vh;
+        height: 150vh;
+        /* height: auto; */
     }
     nav .logo h2{
         display: none;
@@ -802,6 +993,7 @@ main .recent-logs a{
     .main-container{
         width: 100%;
         grid-template-columns: 1fr;
+        height: auto;
     }
     nav{
         position: fixed;

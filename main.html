@@ -29,33 +29,43 @@
                 </div>
 
                 <!-- SIDEBAR -->
-                <div class="sidebar">
-                    <a href="#" id="side-1" class="active">
+                <div class="sidebar" id="s-bar">
+                    <a href="#" id="bar-child-1" class="active">
                         <span class="material-icons-sharp">dashboard</span>
-                        <h3>Dashboard</h3>
+                        <h3>Dashboard</h3><br>
+                        
                         <!--<span class="message-count">99+</span>-->
                     </a>
-                    <a href="#" id="side-2">
+                    <a href="#" id="bar-child-2">
                         <span class="material-icons-sharp">business</span>
                         <h3>Company</h3>
+                        <!-- <span class="material-icons-sharp">arrow_drop_down</span> -->
                     </a>
-                    <a href="#" id="side-3">
+                    <!-- <a href="#">
+                        <span class="material-icons-sharp">add_circle_outline</span>
+                        <h4>Add Company</h4>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">visibility</span>
+                        <h4>View Company</h4>
+                    </a> -->
+                    <a href="#" id="bar-child-3">
                         <span class="material-icons-sharp">history_edu</span>
                         <h3>Application</h3>
                     </a>
-                    <a href="#" id="side-4">
+                    <a href="#" id="bar-child-4">
                         <span class="material-icons-sharp">content_paste_search</span>
                         <h3>Inspection</h3>
                     </a>
-                    <a href="#" id="side-5">
+                    <a href="#" id="bar-child-5">
                         <span class="material-icons-sharp">error_outline</span>
                         <h3>NOV</h3>
                     </a>
-                    <a href="#" id="side-6">
+                    <a href="#" id="bar-child-6">
                         <span class="material-icons-sharp">report_gmailerrorred</span>
                         <h3>NAF</h3>
                     </a>
-                    <a href="#" id="side-7">
+                    <a href="#" id="bar-child-7">
                         <span class="material-icons-sharp">settings</span>
                         <h3>Settings</h3>
                     </a>
@@ -67,7 +77,7 @@
             </nav>
 
             <!-- MAIN SECTION -->
-            <main>
+            <main id="dashboard">
                 <h1>Dashboard</h1>
                 
                 <div class="date">
@@ -173,6 +183,767 @@
             </main>
             <!-- END OF MAIN SECTION -->
 
+            <!--- START OF COMPANY FORM SECTION --->
+            <main id="company-section" style="display: none">
+                <h1>Company</h1>
+                <div class="comp-form">
+                    <div class="comp-container">
+                        
+                        <form action="#">
+    
+                            <!--ENTERPRISE/COMPANY INFORMATION-->  
+                            <div class="info-container">
+                                <span class="box-info">Enterprise Information</span>
+                                <div class="comp-details">
+                                    
+                                    <div class="input-box">
+                                        <label for ="" class="details">Enterprise ID</label>
+                                        <input type="text" name="" id="enterpriseID" placeholder="Enter Enterprise ID" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for ="" class="details">Enterprise Name</label>
+                                        <input type="text" name="" id="" placeholder="Enter Enterprise name" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for ="" class="details">Address</label>
+                                        <input type="text" name="" id="" placeholder="Enter Enterprise Address" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for ="" class="details">Area Code</label>
+                                        <input type="text" name="" id="" placeholder="Enter Enterprise Area Code" required>
+                                    </div>
+        
+                                </div>
+                            </div>
+                            
+    
+                            <!--FIRMS INFORMATION-->
+                            <span class="box-info">Firm's Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">ECC Ref. No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ECC Refrerence No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Hazwaste Gen ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Hazwaste Gen ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Address</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Address" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Area Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Area Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Coordinates: DMS LATITUDE</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's DMS Latitude" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Coordinates: DMS LONGITUDE</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's DMS Longitude" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Lot Area</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Lot Area" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Open Area</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Open Area" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">No. of Building</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Number of Building" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Category</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Category" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Type of Industry</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Type of Industry" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Type of Ownership</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Type of Ownership" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Start of Operation</label>
+                                    <input type="date" name="" id="" placeholder="Enter Firm's Start of Operation" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Status</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Status" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Tel. No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter  Firm's Telephone No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Fax No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Fax No." required>
+                                </div>
+    
+                            </div>
+    
+                            <!-- PERSONNEL'S INFORMATION -->
+                            <span class="box-info">Personnel's Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">Managing Head</label>
+                                    <input type="text" name="" id="" placeholder="Enter Managing Head Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Tel No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Personnel's Telephone No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">PCO</label>
+                                    <input type="text" name="" id="" placeholder="Enter PCO Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">PCO Accredited No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter PCO Accredited No." required>
+                                </div>
+    
+                            </div>
+    
+                            <div class="comp-details-textarea">
+                                <div class="input-box">
+                                    <label for ="" class="details">Remarks</label>
+                                    <textarea cols="20" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="comp-button-container">
+                                <div class="comp-submit-btn">
+                                    <input type="submit" value="Save">
+                                </div>
+                                <div class="comp-cancel-btn">
+                                    <input type="reset" value="Cancel">
+                                </div>
+                            </div>
+      
+                        </form>
+                    </div>
+                    
+                </div>
+            </main>
+            <!--- END OF COMPANY FORM SECTION --->
+            
+            <!--- START OF APPLICATION PCO FORM SECTION --->
+            <main id="application-section" style="display: none;">
+                <h1>Application - PCO Accreditation</h1>
+                <div class="comp-form">
+                    <div class="comp-container">
+                        
+                        <form action="#">
+
+                            <!-- FIRMS INFORMATION -->
+                            <span class="box-info">Firm's Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">ECC Ref. No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ECC Refrerence No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Hazwaste Gen ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Hazwaste Gen ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Address</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Address" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Area Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Area Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Category</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Category" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Type of Industry</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Type of Industry" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Start of Operation</label>
+                                    <input type="date" name="" id="" placeholder="Enter Firm's Start of Operation" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Status</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Status" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Tel. No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter  Firm's Telephone No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Fax No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Fax No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Managing Head</label>
+                                    <input type="text" name="" id="" placeholder="Enter Managing Head Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Tel No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Personnel's Telephone No." required>
+                                </div>                              
+    
+                            </div>
+    
+                            <!-- PERSONNEL'S INFORMATION -->
+                            <span class="box-info">Application Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">Application No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Application No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">PCO Accredited No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter PCO Accredited No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">PCO</label>
+                                    <input type="text" name="" id="" placeholder="Enter PCO Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Evaluator</label>
+                                    <input type="text" name="" id="" placeholder="Enter Evaluator" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date of Evaluation</label>
+                                    <input type="date" name="" id="" placeholder="Enter Date of Evaluation" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date Approved</label>
+                                    <input type="date" name="" id="" placeholder="Enter Date Approved" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Valid Until</label>
+                                    <input type="date" name="" id="" placeholder="Enter Valid Until" required>
+                                </div>
+    
+                            </div>
+    
+                            <div class="comp-button-container">
+                                <div class="comp-submit-btn">
+                                    <input type="submit" value="Save">
+                                </div>
+                                <div class="comp-cancel-btn">
+                                    <input type="reset" value="Cancel">
+                                </div>
+                            </div>
+      
+                        </form>
+                    </div>
+                    
+                </div>
+            </main>
+            <!--- END OF APPLICATION PCO FORM SECTION --->
+
+            <!--- START OF INSPECTION FORM SECTION --->
+            <main id="inspection-section" style="display: none">
+                <h1>Inspection Record</h1>
+                <div class="comp-form">
+                    <div class="comp-container">
+                        
+                        <form action="#">
+
+                            <!-- FIRMS INFORMATION -->
+                            <span class="box-info">Firm's Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">ECC Ref. No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ECC Refrerence No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Start of Operation</label>
+                                    <input type="date" name="" id="" placeholder="Enter Firm's Start of Operation" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Address</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Address" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Area Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Area Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Type of Industry</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Type of Industry" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Status</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Status" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Tel. No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter  Firm's Telephone No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Fax No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Fax No." required>
+                                </div>                          
+    
+                            </div>
+    
+                            <!-- INSPECTION INFORMATION -->
+                            <span class="box-info">Inspection Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">Date Created</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date Updated</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspection Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspection Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector ID" required>
+                                </div>
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector First Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector First Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector Last Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector Last Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Type of Inspection</label>
+                                    <select name="typeofinspection">
+                                        <option selected="selected" value="investigation">Investigation with PAB Cases</option>
+                                        <option value="spd1586">Survey - PD 1586</option>
+                                        <option value="spd8749">Survey - PD 8749</option>
+                                        <option value="spd6969">Survey - PD 6969</option>
+                                        <option value="mpd1586">Monitoring - PD 1586</option>
+                                        <option value="mpd8749">Monitoring - PD 8749</option>
+                                        <option value="mpd6969">Monitoring - PD 6969</option>
+                                        <option value="mpd9275">Monitoring - PD 9275</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Report Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Report Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspection Date</label>
+                                    <div class=fromto-input>
+                                        <label for ="" class="details-from">From:</label>
+                                        <input type="date" name="" id="" class="fromtodate" placeholder="" required>
+                                        <label for ="" class="details-to">To:</label>
+                                        <input type="date" name="" id="" class="fromtodate" placeholder="" required>
+                                    </div>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Received by Laboratory or Other Testing Entity</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Release of Results</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Issuance of NOV's/NAF's</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date Officially Reported to Office</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Report Submitted</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+
+                            </div>
+
+                            <div class="comp-details-textarea">
+                                <div class="input-box">
+                                    <label for ="" class="details">Penalties Imposed or Action Taken</label>
+                                    <textarea cols="20" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="comp-button-container">
+                                <div class="comp-submit-btn">
+                                    <input type="submit" value="Save">
+                                </div>
+                                <div class="comp-cancel-btn">
+                                    <input type="reset" value="Cancel">
+                                </div>
+                            </div>
+      
+                        </form>
+                    </div>
+                    
+                </div>
+            </main>
+            <!--- END OF APPLICATION PCO FORM SECTION --->
+
+            <!--- START OF NOVs FORM SECTION --->
+            <main id="nov-section" style="display: none;">
+                <h1>NOV - Notice of Violation</h1>
+                <div class="comp-form">
+                    <div class="comp-container">
+                        
+                        <form action="#">
+    
+                            <!--FIRMS INFORMATION-->
+                            <span class="box-info">Firm's Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">ECC Ref. No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ECC Refrerence No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Hazwaste Gen ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Hazwaste Gen ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Address</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Address" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Area Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Area Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Coordinates: DMS LATITUDE</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's DMS Latitude" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Coordinates: DMS LONGITUDE</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's DMS Longitude" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Category</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Category" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Type of Industry</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Type of Industry" required>
+                                </div>
+    
+                            </div>
+    
+                            <!-- NOV INFORMATION -->
+                            <span class="box-info">NOV Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">NOV Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter NOV Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date Entered</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Law Violated</label>
+                                    <select name="typeofinspection">
+                                        <option selected="selected" value="investigation">Investigation with PAB Cases</option>
+                                        <option value="spd1586">Survey - PD 1586</option>
+                                        <option value="spd8749">Survey - PD 8749</option>
+                                        <option value="spd6969">Survey - PD 6969</option>
+                                        <option value="mpd1586">Monitoring - PD 1586</option>
+                                        <option value="mpd8749">Monitoring - PD 8749</option>
+                                        <option value="mpd6969">Monitoring - PD 6969</option>
+                                        <option value="mpd9275">Monitoring - PD 9275</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector First Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector First Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector Last Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector Last Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date of Issuance</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date Complied</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Medium</label>
+                                    <select name="typeofinspection">
+                                        <option selected="selected" value="investigation">Investigation with PAB Cases</option>
+                                        <option value="spd1586">Survey - PD 1586</option>
+                                        <option value="spd8749">Survey - PD 8749</option>
+                                        <option value="spd6969">Survey - PD 6969</option>
+                                        <option value="mpd1586">Monitoring - PD 1586</option>
+                                        <option value="mpd8749">Monitoring - PD 8749</option>
+                                        <option value="mpd6969">Monitoring - PD 6969</option>
+                                        <option value="mpd9275">Monitoring - PD 9275</option>
+                                    </select>
+                                </div>
+
+                                
+                                <!-- <div class="input-box">
+                                    <label for ="" class="details">Date</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div> -->
+    
+                            </div>
+
+                            <div class="comp-details-textarea">
+                                <div class="input-box">
+                                    <label for ="" class="details">Provisions</label>
+                                    <textarea cols="20" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="comp-details-textarea">
+                                <div class="input-box">
+                                    <label for ="" class="details">Details</label>
+                                    <textarea cols="20" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="comp-details-textarea">
+                                <div class="input-box">
+                                    <label for ="" class="details">Action Taken or Remarks</label>
+                                    <textarea cols="20" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="comp-button-container">
+                                <div class="comp-submit-btn">
+                                    <input type="submit" value="Save">
+                                </div>
+                                <div class="comp-cancel-btn">
+                                    <input type="reset" value="Cancel">
+                                </div>
+                            </div>
+      
+                        </form>
+                    </div>
+                    
+                </div>
+            </main>
+            <!--- END OF NOVs FORM SECTION --->
+
+            <!--- START OF NAF FORM SECTION --->
+            <main id="naf-section" style="display: none;">
+                <h1>NAF - Notice of Adverse Findings</h1>
+                <div class="comp-form">
+                    <div class="comp-container">
+                        
+                        <form action="#">
+    
+                            <!--FIRMS INFORMATION-->
+                            <span class="box-info">Firm's Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">ECC Ref. No.</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ECC Refrerence No." required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Hazwaste Gen ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Hazwaste Gen ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm ID</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's ID" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Firm Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Address</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Address" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Area Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Area Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Coordinates: DMS LATITUDE</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's DMS Latitude" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Coordinates: DMS LONGITUDE</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's DMS Longitude" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Category</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Category" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Type of Industry</label>
+                                    <input type="text" name="" id="" placeholder="Enter Firm's Type of Industry" required>
+                                </div>
+    
+                            </div>
+    
+                            <!-- NOV INFORMATION -->
+                            <span class="box-info">NOV Information</span>
+                            <div class="comp-details">
+                                
+                                <div class="input-box">
+                                    <label for ="" class="details">NAF Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter NOV Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date Entered</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Law Violated</label>
+                                    <select name="typeofinspection">
+                                        <option selected="selected" value="investigation">Investigation with PAB Cases</option>
+                                        <option value="spd1586">Survey - PD 1586</option>
+                                        <option value="spd8749">Survey - PD 8749</option>
+                                        <option value="spd6969">Survey - PD 6969</option>
+                                        <option value="mpd1586">Monitoring - PD 1586</option>
+                                        <option value="mpd8749">Monitoring - PD 8749</option>
+                                        <option value="mpd6969">Monitoring - PD 6969</option>
+                                        <option value="mpd9275">Monitoring - PD 9275</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector Code</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector Code" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector First Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector First Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Inspector Last Name</label>
+                                    <input type="text" name="" id="" placeholder="Enter Inspector Last Name" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date of Issuance</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Date Complied</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for ="" class="details">Medium</label>
+                                    <select name="typeofinspection">
+                                        <option selected="selected" value="investigation">Investigation with PAB Cases</option>
+                                        <option value="spd1586">Survey - PD 1586</option>
+                                        <option value="spd8749">Survey - PD 8749</option>
+                                        <option value="spd6969">Survey - PD 6969</option>
+                                        <option value="mpd1586">Monitoring - PD 1586</option>
+                                        <option value="mpd8749">Monitoring - PD 8749</option>
+                                        <option value="mpd6969">Monitoring - PD 6969</option>
+                                        <option value="mpd9275">Monitoring - PD 9275</option>
+                                    </select>
+                                </div>
+
+                                
+                                <!-- <div class="input-box">
+                                    <label for ="" class="details">Date</label>
+                                    <input type="date" name="" id="" placeholder="" required>
+                                </div> -->
+    
+                            </div>
+
+                            <div class="comp-details-textarea">
+                                <div class="input-box">
+                                    <label for ="" class="details">Provisions</label>
+                                    <textarea cols="20" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="comp-details-textarea">
+                                <div class="input-box">
+                                    <label for ="" class="details">Details</label>
+                                    <textarea cols="20" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="comp-details-textarea">
+                                <div class="input-box">
+                                    <label for ="" class="details">Action Taken or Remarks</label>
+                                    <textarea cols="20" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="comp-button-container">
+                                <div class="comp-submit-btn">
+                                    <input type="submit" value="Save">
+                                </div>
+                                <div class="comp-cancel-btn">
+                                    <input type="reset" value="Cancel">
+                                </div>
+                            </div>
+      
+                        </form>
+                    </div>
+                    
+                </div>
+            </main>
+            <!--- END OF NAF FORM SECTION --->
+
+
+
+
+
+
+
             <!-- START OF RIGHT SECTION -->
             <div class="right">
 
@@ -206,7 +977,7 @@
                                 <img src="img/profile-2.jpg" alt="" srcset="">
                             </div>
                             <div class="message-update">
-                                <p><b>Mike Tyson</b> received his order of Night lion tech GPS drone.</p>
+                                <p><b>Jacob Santos</b> Added Inspection Record.</p>
                                 <small class="text-muted">2 Minutes Ago</small>
                             </div>
                         </div>
@@ -215,7 +986,7 @@
                                 <img src="img/profile-3.jpg" alt="" srcset="">
                             </div>
                             <div class="message-update">
-                                <p><b>Mike Tyson</b> received his order of Night lion tech GPS drone.</p>
+                                <p><b>Althea Reyes</b> Added NOV.</p>
                                 <small class="text-muted">2 Minutes Ago</small>
                             </div>
                         </div>
@@ -224,7 +995,7 @@
                                 <img src="img/profile-4.jpg" alt="" srcset="">
                             </div>
                             <div class="message-update">
-                                <p><b>Mike Tyson</b> received his order of Night lion tech GPS drone.</p>
+                                <p><b>Gabriel Bautista</b> Added NAF.</p>
                                 <small class="text-muted">2 Minutes Ago</small>
                             </div>
                         </div>
@@ -233,7 +1004,7 @@
                 <!-- END OF RECENT UPDATES -->
                 
                 <!-- START OF SALES ANALYTICS -->
-                <div class="sales-analytics">
+                <div class="sales-analytics" style="display: none;">
                     <h2>Sales Analytics</h2>
                     <div class="item online">
                         <div class="icon">
@@ -284,9 +1055,8 @@
             </div> 
             <!-- END OF RIGHT SECTION -->
 
-            <!-- ADD FORM HERE-->
             
-        </div> <!-- .main-container-->
+        </div> <!-- .main-container -->
         
 
 
