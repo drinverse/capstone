@@ -31,53 +31,74 @@
                 <!-- SIDEBAR -->
                 <div class="sidebar" id="s-bar">
                     <a href="#" id="bar-child-1" class="active">
-                        <span class="material-icons-sharp">dashboard</span>
-                        <h3>Dashboard</h3><br>
-                        
-                        <!--<span class="message-count">99+</span>-->
+                      <span class="material-icons-sharp">dashboard</span>
+                      <h3>Dashboard</h3>
                     </a>
+
+
                     <a href="#" id="bar-child-2">
-                        <span class="material-icons-sharp">business</span>
-                        <h3>Company</h3>
-                        <!-- <span class="material-icons-sharp">arrow_drop_down</span> -->
+                      <span class="material-icons-sharp">business</span>
+                      <h3>Company</h3>
                     </a>
-                    <!-- <a href="#">
-                        <span class="material-icons-sharp">add_circle_outline</span>
-                        <h4>Add Company</h4>
-                    </a>
-                    <a href="#">
-                        <span class="material-icons-sharp">visibility</span>
-                        <h4>View Company</h4>
-                    </a> -->
+                        <div id="dropdown-2" class="dropdown-content">
+                            <a href="#" id="dropbar-add-2"><span class="material-icons-sharp">add_circle_outline</span><h3>Add</h3></a>
+                            <a href="#" id="dropbar-view-2"><span class="material-icons-sharp">visibility</span><h3>View</h3></a>
+                        </div>
+
+                        
                     <a href="#" id="bar-child-3">
-                        <span class="material-icons-sharp">history_edu</span>
-                        <h3>Application</h3>
+                      <span class="material-icons-sharp">history_edu</span>
+                      <h3>Application</h3>
                     </a>
+                        <div id="dropdown-3" class="dropdown-content">
+                            <a href="#" id="dropbar-add-3"><span class="material-icons-sharp">add_circle_outline</span><h3>Add</h3></a>
+                            <a href="#" id="dropbar-view-3"><span class="material-icons-sharp">visibility</span><h3>View</h3></a>
+                        </div>
+
+
                     <a href="#" id="bar-child-4">
-                        <span class="material-icons-sharp">content_paste_search</span>
-                        <h3>Inspection</h3>
+                      <span class="material-icons-sharp">content_paste_search</span>
+                      <h3>Inspection</h3>
                     </a>
+                        <div id="dropdown-4" class="dropdown-content">
+                            <a href="#" id="dropbar-add-4"><span class="material-icons-sharp">add_circle_outline</span><h3>Add</h3></a>
+                            <a href="#" id="dropbar-view-4"><span class="material-icons-sharp">visibility</span><h3>View</h3></a>
+                        </div>
+                    
+                    
                     <a href="#" id="bar-child-5">
-                        <span class="material-icons-sharp">error_outline</span>
-                        <h3>NOV</h3>
+                      <span class="material-icons-sharp">error_outline</span>
+                      <h3>NOV</h3>
                     </a>
+                        <div id="dropdown-5" class="dropdown-content">
+                            <a href="#" id="dropbar-add-5"><span class="material-icons-sharp">add_circle_outline</span><h3>Add</h3></a>
+                            <a href="#" id="dropbar-view-5"><span class="material-icons-sharp">visibility</span><h3>View</h3></a>
+                        </div>
+                    
                     <a href="#" id="bar-child-6">
-                        <span class="material-icons-sharp">report_gmailerrorred</span>
-                        <h3>NAF</h3>
+                      <span class="material-icons-sharp">report_gmailerrorred</span>
+                      <h3>NAF</h3>
                     </a>
+                        <div id="dropdown-6" class="dropdown-content">
+                            <a href="#" id="dropbar-add-6"><span class="material-icons-sharp">add_circle_outline</span><h3>Add</h3></a>
+                            <a href="#" id="dropbar-view-6"><span class="material-icons-sharp">visibility</span><h3>View</h3></a>
+                        </div>
+
+
                     <a href="#" id="bar-child-7">
-                        <span class="material-icons-sharp">settings</span>
-                        <h3>Settings</h3>
+                      <span class="material-icons-sharp">settings</span>
+                      <h3>Settings</h3>
                     </a>
-                    <a href="#">
-                        <span class="material-icons-sharp">logout</span>
-                        <h3>Log out</h3>
+                    <a href="#" id="logout-btn">
+                      <span class="material-icons-sharp">logout</span>
+                      <h3>Log out</h3>
                     </a>
-                </div> 
+                  </div>
+                  
             </nav>
 
             <!-- MAIN SECTION -->
-            <main id="dashboard">
+            <main id="dashboard-section">
                 <h1>Dashboard</h1>
                 
                 <div class="date">
@@ -189,7 +210,7 @@
                 <div class="comp-form">
                     <div class="comp-container">
                         
-                        <form action="#">
+                        <form action="#" class="form-section">
     
                             <!--ENTERPRISE/COMPANY INFORMATION-->  
                             <div class="info-container">
@@ -326,7 +347,7 @@
                                 </div>
                             </div>
     
-                            <div class="comp-button-container">
+                            <div class="comp-button-container" id="submitreset-container-2">
                                 <div class="comp-submit-btn">
                                     <input type="submit" value="Save">
                                 </div>
@@ -348,7 +369,7 @@
                 <div class="comp-form">
                     <div class="comp-container">
                         
-                        <form action="#">
+                        <form action="#" class="form-section">
 
                             <!-- FIRMS INFORMATION -->
                             <span class="box-info">Firm's Information</span>
@@ -448,7 +469,7 @@
     
                             </div>
     
-                            <div class="comp-button-container">
+                            <div class="comp-button-container" id="submitreset-container-3">
                                 <div class="comp-submit-btn">
                                     <input type="submit" value="Save">
                                 </div>
@@ -470,7 +491,7 @@
                 <div class="comp-form">
                     <div class="comp-container">
                         
-                        <form action="#">
+                        <form action="#" class="form-section">
 
                             <!-- FIRMS INFORMATION -->
                             <span class="box-info">Firm's Information</span>
@@ -604,7 +625,7 @@
                                 </div>
                             </div>
 
-                            <div class="comp-button-container">
+                            <div class="comp-button-container" id="submitreset-container-4">
                                 <div class="comp-submit-btn">
                                     <input type="submit" value="Save">
                                 </div>
@@ -626,7 +647,7 @@
                 <div class="comp-form">
                     <div class="comp-container">
                         
-                        <form action="#">
+                        <form action="#" class="form-section">
     
                             <!--FIRMS INFORMATION-->
                             <span class="box-info">Firm's Information</span>
@@ -763,7 +784,7 @@
                                 </div>
                             </div>
     
-                            <div class="comp-button-container">
+                            <div class="comp-button-container" id="submitreset-container-5">
                                 <div class="comp-submit-btn">
                                     <input type="submit" value="Save">
                                 </div>
@@ -785,7 +806,7 @@
                 <div class="comp-form">
                     <div class="comp-container">
                         
-                        <form action="#">
+                        <form action="#" class="form-section">
     
                             <!--FIRMS INFORMATION-->
                             <span class="box-info">Firm's Information</span>
@@ -922,7 +943,7 @@
                                 </div>
                             </div>
     
-                            <div class="comp-button-container">
+                            <div class="comp-button-container" id="submitreset-container-6">
                                 <div class="comp-submit-btn">
                                     <input type="submit" value="Save">
                                 </div>
@@ -937,6 +958,47 @@
                 </div>
             </main>
             <!--- END OF NAF FORM SECTION --->
+
+            <!--- START OF SETTINGS SECTION --->
+            <main id="settings-section" style="display: none;">
+                <h1>Settings</h1>
+                <div class="comp-form">
+                    
+                    <div class="comp-container">
+                        
+                        <div class="settings-container">
+
+                            <form action="#">
+                                
+                                <span class="box-info">User Information</span>
+                                
+                                <div class="comp-details">
+                                    
+                                    <div class="usersettings-photo">
+                                        <img src="img/user-logo.png" alt="" srcset="">
+                                    </div>
+                                    <div class="input-box">
+                                        <label for ="" class="details">Username</label>
+                                        <input type="text" name="" id="" placeholder="This is your Username" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for ="" class="details">Email Address</label>
+                                        <input type="text" name="" id="" placeholder="This is your Email Address" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for ="" class="details">Bio</label>
+                                        <textarea cols="20" name="comments" rows="5" placeholder="Describe yourself..."></textarea>
+                                    </div>
+                            
+                                </div>
+                            </form>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </main>
+            <!--- END OF SETTINGS SECTION --->
 
 
 
